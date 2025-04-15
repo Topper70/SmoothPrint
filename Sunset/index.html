@@ -78,7 +78,7 @@
             const checkInTime = new Date().toLocaleString();
 
             // Generate URL
-            const url = `brotherwebprint://filename=SB.lbx&35x25.bin&text1=${encodeURIComponent(vorname)}&text2=${encodeURIComponent(nachname)}&text3=${encodeURIComponent(email)}&text4=${encodeURIComponent(kontakt)}`;
+            const url = `brotherwebprint://filename=SB.lbx&35x25.bin&Tekst1=${encodeURIComponent(vorname)}&Tekst7=${encodeURIComponent(nachname)}&Tekst3=${encodeURIComponent(email)}&Tekst5=${encodeURIComponent(kontakt)}`;
             window.open(url, '_blank');
 
             // Save check-in data to localStorage
