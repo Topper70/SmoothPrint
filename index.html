@@ -58,9 +58,9 @@
     <img src="Bluebar.jpg" alt="Brother Logo" class="logo">
     <div class="container">
         <h1>Brother Nordic Demo Solutions with Smooth Print</h1>
-        <h2>Zustellungsbenachrichtigung</h2>
+        <h2>Leveringsmeddelelse</h2>
         <form id="printForm">
-            <label for="text1Object" id="text1Label">Empfänger:</label><br>
+            <label for="text1Object" id="text1Label">Modtager:</label><br>
             <select id="text1Object" name="text1Object" >
                  <option value="">Please select...</option>
                     <option value="Sebastian Schmidt, Musterstraße 1, 64354 Reinheim, Deutschland">Sebastian Schmidt</option>
@@ -74,7 +74,7 @@
                     <option value="Jennifer Weber, Ringelstraße 55, 65154 Võru, Estland">Jennifer Weber</option>
             </select><br><br>
 
-            <label for="text2Object" id="text2Label">Abholung/Lieferung:</label><br>
+            <label for="text2Object" id="text2Label">Afhentning/Levering:</label><br>
             <select id="text2Object" name="text2Object">
                 <option value="">Please select...</option>
                 <option value="Ihre Sendung wurde an Ihrem Wunschort hinterlegt">Ihre Sendung wurde an Ihrem Wunschort hinterlegt</option>
@@ -82,13 +82,13 @@
                 <option value="Ihre Sendung wurde an Ihren Nachbarn ausgeliefert">Ihre Sendung wurde an Ihren Nachbarn ausgeliefert</option>
             </select><br><br>
 
-            <label for="text3Object" id="text3Label">Abholungszeit:</label><br>
+            <label for="text3Object" id="text3Label">Afhentningstid:</label><br>
             <select id="text3Object" name="text3Object">
                 <option value="none">none</option>
                 <option value="Ab Freitag 14:00; Öffnungszeit: Mon-Fre 08:00 - 16:00, Sam 09:00 - 13:00"><p>Ab Freitag 14:00; Öffnungszeit: Mon-Fre 08:00 - 16:00, Sam 09:00 - 13:00</p></option>
             </select><br><br>
 
-            <label for="text4Object" id="text4Label">Versandart:</label><br>
+            <label for="text4Object" id="text4Label">Forsendelsestype:</label><br>
             <select id="text4Object" name="text4Object">
                 <option value="1 Paket">1 Paket</option>
                 <option value="2 Pakete">2 Pakete</option>
@@ -96,11 +96,11 @@
                 <option value="1 Brief">1 Brief</option>
             </select><br><br>
 
-            <label for="barcodeObject" id="barcodeLabel">Sendungsnummer:</label><br>
+            <label for="barcodeObject" id="barcodeLabel">Forsendelsenummer:</label><br>
             <input type="text" id="barcodeObject" name="barcodeObject" required><br><br>
 
-            <button type="button" onclick="previewLink()">Linkvorschau</button>
-            <button type="button" onclick="sendToPrint()">Drucken</button>
+            <button type="button" onclick="previewLink()">Vis link</button>
+            <button type="button" onclick="sendToPrint()">Print</button>
         </form>
 
         <div id="previewLink"></div> <!-- Container for displaying the preview link -->
