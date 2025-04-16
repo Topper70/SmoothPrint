@@ -107,13 +107,12 @@
         
         <script>
             function generateUrl() {
-                const text1 = document.getElementById("text1Object").value;
-                const text2 = document.getElementById("text2Object").value;
-                const text3 = document.getElementById("text3Object").value;
-                const text4 = document.getElementById("text4Object").value;
-                const barcode = document.getElementById("barcodeObject").value;
-
-                const url = `brotherwebprint://print?filename=linerless.lbx&size=rd58mm.bin&text_text1=${encodeURIComponent(text1)}&text_text2=${encodeURIComponent(text2)}&text_text3=${encodeURIComponent(text3)}&text_text4=${encodeURIComponent(text4)}&text_barcode2=${encodeURIComponent(barcode)}&barcode_barcode2=${encodeURIComponent(barcode)}`;
+                const Tekst1 = document.getElementById("text1Object").value;
+                const Tekst7 = document.getElementById("text2Object").value;
+                const Tekst3 = document.getElementById("text3Object").value;
+                const Tekst5 = document.getElementById("text4Object").value;
+                
+                const url = `brotherwebprint://print?filename=SB.lbx&size=35x25.bin&text_Tekst1=${encodeURIComponent(Tekst1)}&text_Tekst7=${encodeURIComponent(Tekst7)}&text_Tekst3=${encodeURIComponent(Tekst3)}&text_Tekst5=${encodeURIComponent(Tekst5)}&text_barcode2=${encodeURIComponent(barcode)}&barcode_barcode2=${encodeURIComponent(barcode)}`;
                 return url;
             }
 
